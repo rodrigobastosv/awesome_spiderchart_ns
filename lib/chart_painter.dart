@@ -39,7 +39,7 @@ class SpiderChartDrawer extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     var linePainter = Paint()
       ..style = PaintingStyle.stroke
-      ..color = this.lineColor
+      ..color = Colors.yellow
       ..strokeWidth = strokeWidth
       ..isAntiAlias = true;
     // draw spider
@@ -68,7 +68,8 @@ class SpiderChartDrawer extends CustomPainter {
     var activeStrokePainter = Paint()
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2
-      ..color = model.strokeColor ?? activeBgColor!
+      //..color = model.strokeColor ?? activeBgColor!
+      ..color = Colors.amber
       ..isAntiAlias = true;
     var path = Path();
     do {
@@ -97,8 +98,9 @@ class SpiderChartDrawer extends CustomPainter {
     } else {
       activePainter = Paint()
         ..style = PaintingStyle.fill
-        ..color =
-            model.bgColor?.withOpacity(.75) ?? activeBgColor!.withOpacity(.75)
+        //..color =
+        //model.bgColor?.withOpacity(.75) ?? activeBgColor!.withOpacity(.75)
+        ..color = Colors.brown
         ..isAntiAlias = true;
     }
     canvas.drawPath(path, activePainter);

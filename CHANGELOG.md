@@ -1,3 +1,7 @@
+## 0.0.1+2
+
+Formatting files
+
 ## 0.0.1+1
 
 Adding possibility to change stroke width

@@ -21,8 +21,8 @@ class PointerWidget extends StatelessWidget {
       painter: PointerDrawer(
         sideIndex: sideIndex,
         nbSides: nbSides,
-        radius: radius,
-        color: color,
+        radius: 30,
+        color: Colors.red,
         gradient: gradient,
       ),
     );
@@ -47,7 +47,7 @@ class PointerDrawer extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     var linePainter = Paint()
       ..style = PaintingStyle.stroke
-      ..color = this.color
+      ..color = Colors.red
       ..strokeWidth = 2
       ..isAntiAlias = true;
 

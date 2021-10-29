@@ -111,8 +111,8 @@ class _SpiderChartWidgetState extends State<SpiderChartWidget>
                 ? PointerWidget(
                     sideIndex: widget.activeLabel,
                     nbSides: widget.nbSides,
-                    color: Colors.white,
-                    gradient: new RadialGradient(
+                    color: Colors.yellow,
+                    gradient: RadialGradient(
                       radius: .5,
                       colors: <Color>[
                         Colors.lightGreenAccent.withOpacity(0),

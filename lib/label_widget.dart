@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'spiderchart.dart';
 import 'label_painter.dart';
 
@@ -21,7 +22,7 @@ class LabelWidget extends StatelessWidget {
     return CustomPaint(
       painter: SpiderChartLabelDrawer(
         roundSize: statModel.roundSize + statModel.roundSize,
-        lineColor: this.lineColor,
+        lineColor: Colors.red,
         activeLabelColor: this.activeLabelColor,
         sideIndex: index,
         label: statModel.label,
